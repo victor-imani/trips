@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trips/pages/welcome_page.dart';
+import 'package:trips/pages/nav_pages/main_page.dart';
+// import 'package:trips/pages/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +16,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-       primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home: const WelcomePage(),
+      home: const MainPage(),
     );
   }
 }
-
