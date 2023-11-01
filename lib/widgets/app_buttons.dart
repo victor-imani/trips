@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:flutter/material.dart';
 import 'package:trips/widgets/app_text.dart';
+
+import 'package:flutter/material.dart';
 
 class AppButtons extends StatelessWidget {
   final Color color;
@@ -14,12 +15,12 @@ class AppButtons extends StatelessWidget {
   AppButtons({
     Key? key,
     required this.color,
-    this.isIcon = false,
     this.text = "Hi",
     this.icon,
     required this.backgroundColor,
     required this.size,
     required this.borderColor,
+    this.isIcon = false,
   }) : super(key: key);
 
   @override
