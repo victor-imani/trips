@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:trips/cubit/app_cubit_states.dart';
 import 'package:trips/cubit/app_cubits.dart';
-import 'package:trips/pages/home_page.dart';
+import 'package:trips/pages/detail_page.dart';
+import 'package:trips/pages/nav_pages/main_page.dart';
 import 'package:trips/pages/welcome_page.dart';
 
 class AppCubitLogics extends StatefulWidget {
@@ -24,8 +25,11 @@ class _AppCubitLogicsState extends State<AppCubitLogics> {
           return const Center(child: CircularProgressIndicator(),);
         }
         if (state is LoadedState) {
-          return const HomePage();
-        } 
+          return const MainPage();
+        }
+        if (state is DetailState) {
+          return const DetailPage();
+        }  
         else {
           return Container();
         }
