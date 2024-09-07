@@ -51,7 +51,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         const SizedBox(
                           height: 20,
                         ),
-                        Container(
+                        SizedBox(
                           width: 250,
                           child: const AppText(
                               text:
@@ -66,7 +66,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           onTap: () {
                             BlocProvider.of<AppCubits>(context).getData();
                           },
-                          child: Container(
+                          child: SizedBox(
                             width: 200,
                             child: const Row(
                               children:[ 

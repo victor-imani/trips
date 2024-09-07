@@ -23,7 +23,7 @@ class _DetailPageState extends State<DetailPage> {
     return BlocBuilder<AppCubits, CubitStates>(builder: (context, state) {
       DetailState detail = state as DetailState;
       return Scaffold(
-        body: Container(
+        body: SizedBox(
           width: double.maxFinite,
           height: double.maxFinite,
           child: Stack(
@@ -199,7 +199,7 @@ class _DetailPageState extends State<DetailPage> {
                     const SizedBox(
                       width: 20,
                     ),
-                    ResponsiveButton(
+                    const ResponsiveButton(
                       isResponsive: true,
                     ),
                   ],
